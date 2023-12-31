@@ -78,6 +78,15 @@ target/
 # Jupyter Notebook
 .ipynb_checkpoints
 
+# Downloaded datasets
+*.csv
+*.json
+data/insider-trades/sec-form345-filings/*
+*.DS_Store
+
+# API Keys
+keys/
+
 # IPython
 profile_default/
 ipython_config.py
