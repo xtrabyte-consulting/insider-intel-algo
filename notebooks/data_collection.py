@@ -46,10 +46,11 @@ class ImportData:
       raise Exception(f'Error: {response.status_code}. Failed to fetch dataset: {response.text}')
     data = response.json()
     
-    if 'Error Message' in data.keys():
-      raise Exception(f'JSON Error Message: {data["Error Message"]}')
+    if isinstance(data, dict):
+      if 'Error Message' in data.keys():
+        raise Exception(f'JSON Error Message: {data["Error Message"]}')
+      print(f'JSON Keys: {data.keys()}')
       
-    print(f'JSON Keys: {data.keys()}')
     df = pd.DataFrame(response.json())
     return df
       
@@ -271,20 +272,21 @@ class AlphaVantageDatasets:
   
 if __name__ == '__main__':
   # Get the insider trading data from QuiverQuant
-  ## qq = QuiverDatasets()
-  ## insiders = qq.get_live_insider_set()
-  ## print(insiders.head())
+  qq = QuiverDatasets()
+  insiders = qq.get_live_insider_set()
+  print(insiders.head())
   ## print(insiders.tail())
-  ## print(insiders.shape)
+  print(insiders.shape)
   ## print(insiders.Ticker.value_counts())
   ## print(insiders.Name.value_counts())
   # Get the daily timeseries data from AlphaVantage
-  av = AlphaVantageDatasets()
-  with open('outputs/tickers_value_over_median.txt', 'r') as f:
-    tickers = f.read().split('\n')
-  print(f'Starting download of {len(tickers)} Ticker price sets...')
-  df = av.get_daily_batch(tickers, outputsize='compact')
-  print(f'Frame downloaded {df.shape}')
+  # av = AlphaVantageDatasets()
+  # with open('outputs/tickers_value_over_median.txt', 'r') as f:
+  #  tickers = f.read().split('\n')
+  # print(f'Starting download of {len(tickers)} Ticker price sets...')
+  # df = av.get_daily_batch(tickers, outputsize='compact')
+  # df.to_csv(f'../data/ticker-prices/av_agg_daily.csv', index=True)
+  # print(f'Frame downloaded {df.shape}')
   # Get the daily adjusted data from AlphaVantage
   #av.get_daily_adjusted_batch(tickers)
   # Get the company overview data from AlphaVantage
