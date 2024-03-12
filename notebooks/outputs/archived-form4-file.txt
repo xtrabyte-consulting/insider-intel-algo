@@ -1,0 +1,165 @@
+<SEC-DOCUMENT>0000950170-24-004354.txt : 20240112
+<SEC-HEADER>0000950170-24-004354.hdr.sgml : 20240112
+<ACCEPTANCE-DATETIME>20240112213007
+ACCESSION NUMBER:		0000950170-24-004354
+CONFORMED SUBMISSION TYPE:	4
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	20240110
+FILED AS OF DATE:		20240112
+DATE AS OF CHANGE:		20240112
+
+REPORTING-OWNER:	
+
+	OWNER DATA:	
+		COMPANY CONFORMED NAME:			LAMPERT EDWARD S
+		CENTRAL INDEX KEY:			0001183200
+		ORGANIZATION NAME:           	
+
+	FILING VALUES:
+		FORM TYPE:		4
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	001-13107
+		FILM NUMBER:		24533437
+
+	MAIL ADDRESS:	
+		STREET 1:		1170 KANE CONCOURSE
+		STREET 2:		SUITE 200
+		CITY:			BAY HARBOUR
+		STATE:			FL
+		ZIP:			33154
+
+ISSUER:		
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			AUTONATION, INC.
+		CENTRAL INDEX KEY:			0000350698
+		STANDARD INDUSTRIAL CLASSIFICATION:	RETAIL-AUTO DEALERS & GASOLINE STATIONS [5500]
+		ORGANIZATION NAME:           	07 Trade & Services
+		IRS NUMBER:				731105145
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	BUSINESS ADDRESS:	
+		STREET 1:		200 SW 1ST AVE
+		STREET 2:		SUITE 1600
+		CITY:			FORT LAUDERDALE
+		STATE:			FL
+		ZIP:			33301
+		BUSINESS PHONE:		9547696000
+
+	MAIL ADDRESS:	
+		STREET 1:		200 SW 1ST AVE
+		STREET 2:		SUITE 1600
+		CITY:			FORT LAUDERDALE
+		STATE:			FL
+		ZIP:			33301
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	AUTONATION, INC. /FL
+		DATE OF NAME CHANGE:	20090827
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	AutoNation, Inc. /FL
+		DATE OF NAME CHANGE:	20090827
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	AUTONATION INC /FL
+		DATE OF NAME CHANGE:	19990407
+<DOCUMENT>
+<TYPE>4
+<SEQUENCE>1
+<FILENAME>ownership.xml
+<DESCRIPTION>4
+<TEXT>
+<XML>
+<?xml version="1.0"?>
+<ownershipDocument>
+
+    <schemaVersion>X0508</schemaVersion>
+
+    <documentType>4</documentType>
+
+    <periodOfReport>2024-01-10</periodOfReport>
+
+    <issuer>
+        <issuerCik>0000350698</issuerCik>
+        <issuerName>AUTONATION, INC.</issuerName>
+        <issuerTradingSymbol>AN</issuerTradingSymbol>
+    </issuer>
+
+    <reportingOwner>
+        <reportingOwnerId>
+            <rptOwnerCik>0001183200</rptOwnerCik>
+            <rptOwnerName>LAMPERT EDWARD S</rptOwnerName>
+        </reportingOwnerId>
+        <reportingOwnerAddress>
+            <rptOwnerStreet1>1170 KANE CONCOURSE, SUITE 200</rptOwnerStreet1>
+            <rptOwnerStreet2></rptOwnerStreet2>
+            <rptOwnerCity>BAY HARBOR ISLANDS</rptOwnerCity>
+            <rptOwnerState>FL</rptOwnerState>
+            <rptOwnerZipCode>33154</rptOwnerZipCode>
+            <rptOwnerStateDescription></rptOwnerStateDescription>
+        </reportingOwnerAddress>
+        <reportingOwnerRelationship>
+            <isDirector>false</isDirector>
+            <isOfficer>false</isOfficer>
+            <isTenPercentOwner>true</isTenPercentOwner>
+            <isOther>false</isOther>
+        </reportingOwnerRelationship>
+    </reportingOwner>
+
+    <aff10b5One>false</aff10b5One>
+
+    <nonDerivativeTable>
+        <nonDerivativeTransaction>
+            <securityTitle>
+                <value>Common Stock, par value $0.01 per share</value>
+            </securityTitle>
+            <transactionDate>
+                <value>2024-01-10</value>
+            </transactionDate>
+            <transactionCoding>
+                <transactionFormType>4</transactionFormType>
+                <transactionCode>S</transactionCode>
+                <equitySwapInvolved>false</equitySwapInvolved>
+            </transactionCoding>
+            <transactionAmounts>
+                <transactionShares>
+                    <value>77284</value>
+                </transactionShares>
+                <transactionPricePerShare>
+                    <value>142.5801</value>
+                </transactionPricePerShare>
+                <transactionAcquiredDisposedCode>
+                    <value>D</value>
+                </transactionAcquiredDisposedCode>
+            </transactionAmounts>
+            <postTransactionAmounts>
+                <sharesOwnedFollowingTransaction>
+                    <value>4659161</value>
+                </sharesOwnedFollowingTransaction>
+            </postTransactionAmounts>
+            <ownershipNature>
+                <directOrIndirectOwnership>
+                    <value>D</value>
+                    <footnoteId id="F1"/>
+                </directOrIndirectOwnership>
+            </ownershipNature>
+        </nonDerivativeTransaction>
+    </nonDerivativeTable>
+
+    <footnotes>
+        <footnote id="F1">Includes 1,649 shares of common stock of AutoNation, Inc. (the &quot;Issuer&quot;), par value $0.01 per share (each, a &quot;Share&quot;), held by The Nicholas Floyd Lampert 2015 Trust (&quot;The Nicholas Trust&quot;), and 1,649 Shares held by The Nina Rose Lampert 2015 Trust (the &quot;The Nina Trust&quot; and, together with The Nicholas Trust, the &quot;Trusts&quot;). The reporting person may be deemed to have beneficial ownership of securities owned by the Trusts. The reporting person disclaims beneficial ownership of the securities owned by the Trusts, except to the extent of the pecuniary interest of the reporting person in such securities. The reporting person states that neither the filing of this statement nor anything herein shall be deemed an admission that such person is, for purposes of Section 16 of the Securities Exchange Act of 1934, as amended or otherwise, the beneficial owner of any securities owned by the Trusts.</footnote>
+    </footnotes>
+
+    <ownerSignature>
+        <signatureName>EDWARD S. LAMPERT, By:	/s/ Edward S. Lampert</signatureName>
+        <signatureDate>2024-01-12</signatureDate>
+    </ownerSignature>
+</ownershipDocument>
+</XML>
+</TEXT>
+</DOCUMENT>
+</SEC-HEADER>
+</SEC-DOCUMENT>
+

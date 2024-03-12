@@ -87,10 +87,10 @@ class ImportData:
   
 class QuiverDatasets:
   
-  SP500_TICKERS = pd.read_csv('https://datahub.io/core/s-and-p-500-companies/r/constituents.csv').Symbol.tolist()
+  #SP500_TICKERS = pd.read_csv('https://datahub.io/core/s-and-p-500-companies/r/constituents.csv').Symbol.tolist()
   QQ_BASE_URL = 'https://api.quiverquant.com/'
   
-  def __init__(self, api_key = read_api_key('keys/qq_api_key.txt'), base_url = QQ_BASE_URL, tickers = SP500_TICKERS):
+  def __init__(self, api_key = read_api_key('keys/qq_api_key.txt'), base_url = QQ_BASE_URL, tickers = []):
     self.api_key = api_key
     self.base_url = base_url
     self.tickers = tickers
@@ -272,21 +272,22 @@ class AlphaVantageDatasets:
   
 if __name__ == '__main__':
   # Get the insider trading data from QuiverQuant
-  #qq = QuiverDatasets()
-  #insiders = qq.get_live_insider_set()
-  #print(insiders.head())
-  ## print(insiders.tail())
-  ## print(insiders.shape)
-  ## print(insiders.Ticker.value_counts())
-  ## print(insiders.Name.value_counts())
+  qq = QuiverDatasets()
+  insiders = qq.get_live_insider_set()
+  print(insiders.head())
+  print(insiders.shape)
+  print(insiders.tail())
+  print(insiders.Ticker.value_counts())
+  print(insiders.Name.value_counts())
+  tickers = insiders.Ticker.value_counts().index.tolist()
   # Get the daily timeseries data from AlphaVantage
   av = AlphaVantageDatasets()
-  with open('outputs/missing_tickers.txt', 'r') as f:
-   tickers = f.read().split('\n')
-   print(f'Starting download of {len(tickers)} Ticker price sets...')
-   df = av.get_daily_batch(tickers, outputsize='compact')
-   df.to_csv(f'../data/ticker-prices/av_agg_daily.csv', index=True)
-   print(f'Frame downloaded {df.shape}')
+  #with open('outputs/missing_tickers.txt', 'r') as f:
+  # tickers = f.read().split('\n')
+  print(f'Starting download of {len(tickers)} Ticker price sets...')
+  df = av.get_daily_batch(tickers, outputsize='compact')
+  df.to_csv(f'../data/ticker-prices/av_agg_daily.csv', index=True)
+  print(f'Frame downloaded {df.shape}')
   # Get the daily adjusted data from AlphaVantage
   #av.get_daily_adjusted_batch(tickers)
   # Get the company overview data from AlphaVantage
