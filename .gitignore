@@ -80,7 +80,6 @@ target/
 
 # Downloaded datasets
 *.csv
-*.json
 data/insider-trades/sec-form345-filings/*
 *.DS_Store
 
